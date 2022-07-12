@@ -18,3 +18,14 @@ for (var i = 0; i < 24; i++) {
     console.log(MinuteSlot)
 
     console.log (HourSlot % 12)
+
+    
+      //Times//
+    var currentDayTime;
+    if (hour == i) {
+        currentDayTime = 'present';
+    } else if (hour > i) {
+        currentDayTime = 'past';
+    } else if (hour < i) {
+        currentDayTime = 'future';
+    }
