@@ -20,52 +20,61 @@ body {
     border-radius: 0;
     border-bottom: 10px solid black;
   }
-  
+  .textHere{
+    color:black;
+  }
   .description{
     white-space: pre-wrap;
-    
   }
-  .h1{
-    font-weight: bold;
-    font-size: 55px;
-    color: #04ccf9;
-    background-color: darkblue;
-  }
- 
-
+  
   .time-block{
     text-align: center;
-    align-self: center;
-    display: center;
     border-radius: 15px;
-    margin: 1px;
+    width: 50px;
   }
   
   .row {
     white-space: pre-wrap;
     height: 80px;
-    border-top: 1px solid rgb(5, 13, 255);;
+    border-top: 1px solid white;
+    margin: 15px;
+    width: 110%;
   }
   
   .hour {
-    background-color: #ffffff;
+    background-color: rgb(168, 199, 213);
+    display: center;
+    align-items: center;
+    align-content: center;
     color: #000000;
     border-top: 1px dashed #000000;
   }
-  
+  .fa-save{
+    size-adjust: 20px;
+
+  }
   .past {
     background-color: #d3d3d3;
-    color: rgb(2, 2, 2);
+    color: black;
+    width: 80vh;
+    padding:-10vh;
+    font-weight: bold;
   }
   
   .present {
     background-color: #ff6961;
-    color: rgb(8, 7, 7);
+    color: black;
+    width: 80vh;
+    padding:-10vh;
+    font-weight: bold;
   }
   
   .future {
     background-color: #77dd77;
-    color: rgb(0, 0, 0);
+    color: black;
+    font-weight: bold;
+    width: 80vh;
+    padding:-10vh;
   }
   
   .saveBtn {
@@ -74,9 +83,11 @@ body {
     border-bottom-right-radius: 15px;
     background-color: #06AED5;
     color: white;
+    font-size: 25px;
+
   }
   
-  .saveBtn i:hover {
-    font-size: 20px;
-    transition: all .3s ease-in-out;
+  .saveBtn:hover {
+    font-size: 35px;
+    transition: all .5s ease-out;
   }
