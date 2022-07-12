@@ -41,3 +41,11 @@ for (var i = 0; i < 24; i++) {
 
     $("#MAINSOURCE").append(Schedule);
 };
+
+// storage //
+for (var i = 0; i < 24; i++) {
+    $(`.hour-${i}`).val(localStorage.getItem(`hour-${i}`));
+}
+
+
+
