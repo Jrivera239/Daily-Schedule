@@ -47,5 +47,11 @@ for (var i = 0; i < 24; i++) {
     $(`.hour-${i}`).val(localStorage.getItem(`hour-${i}`));
 }
 
+// save function on click//
+$(".saveBtn").on("click", function () {
+    var value = $(this).siblings(".contextArea").val();
+    var time = $(this).parent().attr("id");
+    localStorage.setItem(time, value);
+});
 
 
