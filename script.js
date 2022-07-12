@@ -29,3 +29,15 @@ for (var i = 0; i < 24; i++) {
     } else if (hour < i) {
         currentDayTime = 'future';
     }
+
+    
+   // main source per hour slot container
+    var Schedule =
+        `<container class="row" id='hour-${i}'>
+            <div class="hour">${HourSlot}</div>
+            <textarea class= "contextArea  ${currentDayTime} hour-${i}"></textarea>
+            <button class= "saveBtn w-25  fas fa-save"></button></div>  
+        </container>`;
+
+    $("#MAINSOURCE").append(Schedule);
+};
