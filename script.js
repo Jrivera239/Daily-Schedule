@@ -19,8 +19,7 @@ for (var i = 0; i < 24; i++) {
 
     console.log (HourSlot % 12)
 
-    
-      //Times//
+    //Times//
     var currentDayTime;
     if (hour == i) {
         currentDayTime = 'present';
@@ -29,29 +28,25 @@ for (var i = 0; i < 24; i++) {
     } else if (hour < i) {
         currentDayTime = 'future';
     }
-
-    
-   // main source per hour slot container
+// main source per hour slot
     var Schedule =
         `<container class="row" id='hour-${i}'>
             <div class="hour">${HourSlot}</div>
             <textarea class= "contextArea  ${currentDayTime} hour-${i}"></textarea>
-            <button class= "saveBtn w-25  fas fa-save"></button></div>  
+            <button class= "saveBtn fas fa-save"></button></div>  
         </container>`;
 
     $("#MAINSOURCE").append(Schedule);
 };
 
-// storage //
-for (var i = 0; i < 24; i++) {
-    $(`.hour-${i}`).val(localStorage.getItem(`hour-${i}`));
-}
-
-// save function on click//
 $(".saveBtn").on("click", function () {
     var value = $(this).siblings(".contextArea").val();
     var time = $(this).parent().attr("id");
     localStorage.setItem(time, value);
 });
 
+
+for (var i = 0; i < 24; i++) {
+    $(`.hour-${i}`).val(localStorage.getItem(`hour-${i}`));
+}
 
