@@ -13,12 +13,12 @@ for (var i = 0; i < 24; i++) {
     var HourSlot = momentTime.add(1, "hour").format("HH:mm A"); 
     var MinuteSlot =   momentTime.add(0, "minute").format("mm"); 
 
-    //troubleshooting aid//
+    //troubleshooting aid
     console.log(HourSlot)
     console.log(MinuteSlot)
 
     console.log (HourSlot % 12)
-
+// 
     //Times//
     var currentDayTime;
     if (hour == i) {
